@@ -8,22 +8,34 @@
  */
 int main()
 {
+    int array[BUFFER_SIZE];
     #if 0
-    int arry[BUFFER_SIZE] = { 0 };
-    #endif
-    int arry[BUFFER_SIZE];
+    int array[BUFFER_SIZE] = { 0 };
+    int array[BUFFER_SIZE];
 
     for (int idx = 0; idx < BUFFER_SIZE; idx++)
     {
-        printf("arry[%d] = %d\n",idx, arry[idx]);
+        printf("array[%d] = %d\n",idx, array[idx]);
     }
-    int len = sizeof(arry);
+    int len = sizeof(array);
     printf("len = %d\n", len );
     /* 地址 */
-    printf("%p\n",&arry);
-    printf("%p\n",&arry[0]);
-    printf("%p\n",&arry[1]);
-    printf("%p\n",&arry[9]);
+    printf("%p\n",&array);
+    printf("%p\n",&array[0]);
+    printf("%p\n",&array[1]);
+    printf("%p\n",&array[9]);
+    #endif
+  
 
+   #if 1
+   memset(array, 1, sizeof(array));
+   printf("=============\n");
+   for (int idx = 0; idx < BUFFER_SIZE; idx++)
+   {
+    /* code */
+    printf("array[%d] = %d\n",idx, array[idx]);
+   }
+   
+   #endif
     return 0;
 }
