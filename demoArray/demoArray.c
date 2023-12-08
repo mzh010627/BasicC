@@ -27,7 +27,7 @@ int main()
     #endif
   
 
-   #if 1
+   #if 0
    memset(array, 1, sizeof(array));
    printf("=============\n");
    for (int idx = 0; idx < BUFFER_SIZE; idx++)
@@ -37,5 +37,9 @@ int main()
    }
    
    #endif
+
+
+   
+
     return 0;
 }
