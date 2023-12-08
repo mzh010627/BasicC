@@ -95,6 +95,26 @@ int main()
     printf("orVal:%d\n", orVal);
     printf("andVal:%d\n",andVal);
     #endif
+
+#if 0
+
+    /* 运算符：双目运算符 & 三目运算符 */
+    /* 双目运算符 */
+    //int a = 7 + 8;
+
+    /* */
+    int num1 = 40;
+    int num2 = 30;
+
+    /* 三目运算符 */
     
+#endif
+
+
+
+
+
+
+
     return 0;
 }
